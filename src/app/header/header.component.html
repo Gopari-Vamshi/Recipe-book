@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default" style="background-color: mediumslateblue;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand" style="color: white;">Recipe Book</a>
+        </div>
+        <div class="collapse navbar-collapse topnav">
+            <ul class="nav navbar-nav">
+                <li><a routerLinkActive="active" routerLink="/recipes" style="color: white;" appButton>Recipes</a></li>
+                <li><a routerLinkActive="active" routerLink="/shopping-list" style="color: white;" appButton>Shopping list</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" appDropdown>
+                    <a style="color: white;" class="dropdown-toggle" role="button" appDropdown>Manage<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a style="cursor: pointer;">Save Data</a></li>
+                        <li><a style="cursor: pointer;">Fetch Data</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
