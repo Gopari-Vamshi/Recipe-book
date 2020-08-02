@@ -9,9 +9,8 @@
         *ngFor="let ingredient of ingredients; let i = index"
         (click)="onEditItem(i)"
         >{{ ingredient.name }} ({{ingredient.amount}})
-        <div class="row pull-right">
-            <a style="margin-top: -10px; border: 1px solid red;color: red; padding: 9px; "class="btn" (click)="onDelete(i)">X</a>
-        </div>
+        
+            <a style="margin: -8px;" class="btn glyphicon glyphicon-remove text-danger pull-right" (click)="onDelete(i)"></a>
       </a>
     </ul>
   </div>

@@ -1,22 +1,57 @@
 <nav class="navbar navbar-default" style="background-color: mediumslateblue;">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="#" class="navbar-brand" style="color: white;">Recipe Book</a>
-        </div>
-        <div class="collapse navbar-collapse topnav">
-            <ul class="nav navbar-nav">
-                <li><a routerLinkActive="active" routerLink="/recipes" style="color: white;" appButton>Recipes</a></li>
-                <li><a routerLinkActive="active" routerLink="/shopping-list" style="color: white;" appButton>Shopping list</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown" appDropdown>
-                    <a style="color: white;" class="dropdown-toggle" role="button" appDropdown>Manage<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a style="cursor: pointer;">Save Data</a></li>
-                        <li><a style="cursor: pointer;">Fetch Data</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="cursor: pointer; color: white;">Recipe Book</a>
     </div>
+    <div class="collapse navbar-collapse topnav">
+      <ul class="nav navbar-nav">
+        <li 
+        *ngIf="isAuthenticated">
+          <a
+            routerLinkActive="active"
+            routerLink="/recipes"
+            style="color: white;"
+            appButton>Recipes</a>
+        </li>
+        <li>
+          <a
+            routerLinkActive="active"
+            routerLink="/shopping-list"
+            style="color: white;"
+            appButton>Shopping list</a>
+        </li>
+        <li 
+        *ngIf="!isAuthenticated">
+            <a
+              routerLinkActive="active"
+              routerLink="/auth"
+              style="color: white;"
+              appButton>Authenticate</a>
+          </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="isAuthenticated">
+            <a 
+              style="cursor: pointer; color: white;" 
+              (click)="onLogout()"
+              appButton>Logout</a>
+        </li>
+        <li class="dropdown" appDropdown *ngIf="isAuthenticated">
+          <a
+            style="color: white;"
+            class="dropdown-toggle"
+            role="button"            
+            appDropdown>Manage<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a style="cursor: pointer;" (click)="onSaveData()">Save Data</a>
+            </li>
+            <li>
+              <a style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
