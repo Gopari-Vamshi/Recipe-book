@@ -6,6 +6,7 @@ import { PlaceholderDirective } from './placeholder/placeholder.directive';
 import { DropdownDirective } from './dropdown.directive';
 import { ButtonDirective } from './button.directive';
 import { CommonModule } from '@angular/common';
+import { LoggingService } from '../logging.service';
 
 @NgModule({
   declarations: [
@@ -24,5 +25,6 @@ import { CommonModule } from '@angular/common';
     ButtonDirective,
     CommonModule
   ],
+  providers: [LoggingService]
 })
 export class SharedModule {}

@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { ShoppingListComponent } from './shopping-list.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 
 import { ShoppinglistRoutingModule } from './shoppinglist-routing.module';
 import {SharedModule} from '../shared/shared.module';
+import { LoggingService } from '../logging.service';
 
 @NgModule({
   declarations: [ShoppingListComponent, ShoppingEditComponent],
@@ -18,6 +18,6 @@ import {SharedModule} from '../shared/shared.module';
     ShoppinglistRoutingModule,
     SharedModule
   ],
-  exports: [ShoppingListComponent, ShoppingEditComponent],
+  // providers: [LoggingService]
 })
 export class ShoppinglistModule {}

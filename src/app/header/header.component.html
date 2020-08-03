@@ -1,47 +1,189 @@
 <nav class="navbar navbar-default" style="background-color: mediumslateblue;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href="#" class="navbar-brand" style="cursor: pointer; color: white;">Recipe Book</a>
+      <a routerLink="/recipes" class="navbar-brand" style="margin-top: -12px;cursor: pointer; color: white;"
+        ><svg
+          id="Layer_1"
+          enable-background="new 0 0 512 512"
+          height="70"
+          viewBox="0 0 512 512"
+          width="80"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <g>
+              <g>
+                <path
+                  d="m136 440c0 17.673-14.327 32-32 32h288c17.673 0 32-14.327 32-32v-368c0-17.673 14.327-32 32-32h-288c-17.673 0-32 14.327-32 32z"
+                  fill="#f04b37"
+                />
+              </g>
+              <g>
+                <path
+                  d="m344 400h-256c-8.837 0-16 7.163-16 16v24c0 17.673 14.327 32 32 32h288c-17.673 0-32-14.327-32-32v-24c0-8.837-7.163-16-16-16z"
+                  fill="#d7322d"
+                />
+              </g>
+              <g>
+                <path
+                  d="m472 128h-48v-56c0-17.673 14.327-32 32-32 17.673 0 32 14.327 32 32v40c0 8.837-7.163 16-16 16z"
+                  fill="#d7322d"
+                />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path
+                  d="m280 176h-24c-4.418 0-8-3.582-8-8v-64h32z"
+                  fill="#d7e6e6"
+                />
+              </g>
+              <g>
+                <path
+                  d="m304 176h-24v-72h32v64c0 4.418-3.582 8-8 8z"
+                  fill="#aac3d7"
+                />
+              </g>
+              <g>
+                <path
+                  d="m312 80c-6.148 0-11.754 2.314-16 6.116-4.246-3.802-9.852-6.116-16-6.116s-11.754 2.314-16 6.116c-4.246-3.802-9.852-6.116-16-6.116-13.255 0-24 10.745-24 24s10.745 24 24 24c6.148 0 11.754-2.314 16-6.116 4.246 3.802 9.852 6.116 16 6.116s11.754-2.314 16-6.116c4.246 3.802 9.852 6.116 16 6.116 13.255 0 24-10.745 24-24s-10.745-24-24-24z"
+                  fill="#d7e6e6"
+                />
+              </g>
+            </g>
+            <g>
+              <g>
+                <g>
+                  <path
+                    d="m200 304c-8.837 0-16-7.163-16-16 0-8.837 7.163-16 16-16 8.837 0 16 7.163 16 16 0 8.837-7.163 16-16 16z"
+                    fill="#d7322d"
+                  />
+                </g>
+                <g>
+                  <path
+                    d="m344 304h-96c-8.837 0-16-7.163-16-16 0-8.837 7.163-16 16-16h96c8.837 0 16 7.163 16 16 0 8.837-7.163 16-16 16z"
+                    fill="#d7322d"
+                  />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="m200 240c-8.837 0-16-7.163-16-16 0-8.837 7.163-16 16-16 8.837 0 16 7.163 16 16 0 8.837-7.163 16-16 16z"
+                    fill="#d7322d"
+                  />
+                </g>
+                <g>
+                  <path
+                    d="m344 240h-96c-8.837 0-16-7.163-16-16 0-8.837 7.163-16 16-16h96c8.837 0 16 7.163 16 16 0 8.837-7.163 16-16 16z"
+                    fill="#d7322d"
+                  />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="m200 368c-8.837 0-16-7.163-16-16 0-8.837 7.163-16 16-16 8.837 0 16 7.163 16 16 0 8.837-7.163 16-16 16z"
+                    fill="#d7322d"
+                  />
+                </g>
+                <g>
+                  <path
+                    d="m344 368h-96c-8.837 0-16-7.163-16-16 0-8.837 7.163-16 16-16h96c8.837 0 16 7.163 16 16 0 8.837-7.163 16-16 16z"
+                    fill="#d7322d"
+                  />
+                </g>
+              </g>
+            </g>
+            <g><circle cx="136" cy="240" fill="#fabe19" r="112" /></g>
+            <g>
+              <g>
+                <path
+                  d="m200 272h-128c-8.837 0-16-7.163-16-16v-48c0-8.837 7.163-16 16-16h128c8.837 0 16 7.163 16 16v48c0 8.837-7.163 16-16 16z"
+                  fill="#55525b"
+                />
+              </g>
+              <g>
+                <path
+                  d="m196 256h-120c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4h120c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4z"
+                  fill="#353744"
+                />
+              </g>
+              <g>
+                <path
+                  d="m176 304h-80c-4.418 0-8-3.582-8-8v-48h96v48c0 4.418-3.582 8-8 8z"
+                  fill="#d7e6e6"
+                />
+              </g>
+              <g>
+                <path
+                  d="m184 192h-96v-8c0-4.418 3.582-8 8-8h80c4.418 0 8 3.582 8 8z"
+                  fill="#d7e6e6"
+                />
+              </g>
+              <g>
+                <path
+                  d="m194.667 218.667c-2.933 0-5.333-2.4-5.333-5.333 0-2.933 2.4-5.333 5.333-5.333 2.933 0 5.333 2.4 5.333 5.333 0 2.933-2.4 5.333-5.333 5.333z"
+                  fill="#fabe19"
+                />
+              </g>
+              <g>
+                <path
+                  d="m165.333 282.667h-58.667c-4.418 0-8-3.582-8-8 0-4.418 3.582-8 8-8h58.667c4.418 0 8 3.582 8 8 0 4.418-3.581 8-8 8z"
+                  fill="#aac3d7"
+                />
+              </g>
+            </g>
+          </g></svg
+      ></a>
     </div>
     <div class="collapse navbar-collapse topnav">
       <ul class="nav navbar-nav">
-        <li 
-        *ngIf="isAuthenticated">
+        <li *ngIf="isAuthenticated">
           <a
             routerLinkActive="active"
             routerLink="/recipes"
             style="color: white;"
-            appButton>Recipes</a>
+            appButton
+            >Recipes</a
+          >
         </li>
         <li>
           <a
             routerLinkActive="active"
             routerLink="/shopping-list"
             style="color: white;"
-            appButton>Shopping list</a>
+            appButton
+            >Shopping list</a
+          >
         </li>
-        <li 
-        *ngIf="!isAuthenticated">
-            <a
-              routerLinkActive="active"
-              routerLink="/auth"
-              style="color: white;"
-              appButton>Authenticate</a>
-          </li>
+        <li *ngIf="!isAuthenticated">
+          <a
+            routerLinkActive="active"
+            routerLink="/auth"
+            style="color: white;"
+            appButton
+            >Authenticate</a
+          >
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li *ngIf="isAuthenticated">
-            <a 
-              style="cursor: pointer; color: white;" 
-              (click)="onLogout()"
-              appButton>Logout</a>
+          <a
+            style="cursor: pointer; color: white;"
+            (click)="onLogout()"
+            appButton
+            >Logout</a
+          >
         </li>
         <li class="dropdown" appDropdown *ngIf="isAuthenticated">
           <a
             style="color: white;"
             class="dropdown-toggle"
-            role="button"            
-            appDropdown>Manage<span class="caret"></span></a>
+            role="button"
+            appDropdown
+            >Manage<span class="caret"></span
+          ></a>
           <ul class="dropdown-menu">
             <li>
               <a style="cursor: pointer;" (click)="onSaveData()">Save Data</a>
